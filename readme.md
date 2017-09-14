@@ -1,6 +1,6 @@
 # Docker-Php7-Xdebug-Nginx
 
-A quick and easy way to setup your PHP application using Docker and docker-compose. This will setup a developement environment with PHP7-fpm, Xdebug and Nginx.
+A quick and easy way to setup your PHP application & debug it on Chrome browser using Docker and docker-compose. This will setup a developement environment with PHP7-fpm, Xdebug and Nginx.
 
 ## Usage
 ~~~
@@ -35,4 +35,4 @@ docker-compose up -d
 - Change your IP address(use `ifconfig`command) on `xdebug.remote_host` value in `fpm/Dockerfile`.
 - Change your listening port to `9001` on `Phpstorm`.
 - Just create a remote debug server called `docker` (as mentionned on `docker-compose.yml` file `PHP_IDE_CONFIG: serverName=docker`) on `Phpstorm` and map the `app/public/` folder to `/var/app/public`.
-- Start listening to Xdebug connections on PhpStorm
+- Start listening to PHP Debug connections on PhpStorm
