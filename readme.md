@@ -30,6 +30,9 @@ docker-compose up -d
 
 
 ### Xdebug setup
+- Install chrome extension https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en
+- Activate Debug on chrome
 - Change your IP address(use `ifconfig`command) on `xdebug.remote_host` value in `fpm/Dockerfile`.
 - Change your listening port to `9001` on `Phpstorm`.
 - Just create a remote debug server called `docker` (as mentionned on `docker-compose.yml` file `PHP_IDE_CONFIG: serverName=docker`) on `Phpstorm` and map the `app/public/` folder to `/var/app/public`.
+- Start listening to Xdebug connections on PhpStorm
