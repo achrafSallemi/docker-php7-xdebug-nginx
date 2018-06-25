@@ -1,6 +1,6 @@
 # Docker-Php7-Xdebug-Nginx
 
-A quick and easy way to setup your PHP application & debug it on Chrome browser using Docker. This will setup a developement environment with PHP7-fpm, Xdebug and Nginx.
+A quick and easy way to setup your PHP application & debug it on Chrome browser using Docker. This will setup a developement environment with PHP7-fpm, Xdebug, Memcache and Nginx.
 
 ## Usage
 ~~~
