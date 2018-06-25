@@ -1,10 +1,12 @@
 FROM ubuntu:latest
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get install -y software-properties-common language-pack-en-base \
     && LC_ALL=en_US.UTF-8 add-apt-repository -y ppa:ondrej/php \
     && apt-get update \
-    && apt-get install -y php7.0 php7.0-fpm php7.0-xdebug mcrypt php7.0-gd curl \
-       php7.0-curl supervisor \
+    && apt-get install -y php7.0 php7.0-fpm php7.0-xdebug mcrypt php7.0-gd php7.0-memcache memcached curl \
+       php7.0-curl supervisor net-tools \
     && mkdir /run/php \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
